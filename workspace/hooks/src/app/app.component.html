@@ -1,0 +1,12 @@
+<h1>Lifecyle hooks</h1>
+<input type="text" name="title" [(ngModel)]="title">
+<app-child [items]="itemList" [title]="title"></app-child>
+<app-simple-message>
+  <h3 #messagecontent>ngAfterContentInitHook:</h3>
+  <p #messagecontent>This is a simple example</p>
+</app-simple-message>
+<h2>NgAfterViewInit</h2>
+@if (showHello) {
+  <app-afterview></app-afterview>
+}
+Show<input type="checkbox" [(ngModel)]="showHello">
